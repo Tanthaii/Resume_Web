@@ -1,0 +1,312 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-section {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  object-fit: cover;
+}
+
+.name-and-contact-section {
+  flex-basis: 70%;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #333;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px; 
+}
+
+.contact-list li span {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.icon {
+  width: 20px; 
+  height: 20px; 
+  vertical-align: middle; 
+}
+
+
+.main-content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.left-column {
+  flex-basis: 30%;
+  border-right: 2px solid #ddd;
+  padding-right: 20px;
+}
+
+.right-column {
+  flex-basis: 70%;
+  padding-left: 20px;
+}
+
+
+.left-column h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.left-column p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.education ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.education ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.education ul li span {
+  font-weight: normal;
+  display: block;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border: none; 
+  padding-bottom: 0; 
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.skill-category ul li {
+  margin-bottom: 5px;
+}
+
+.right-column h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.projects {
+  margin-top: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.project ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.project ul li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    border-right: none;
+    padding: 0;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px; 
+  }
+
+  .profile-section {
+    margin-bottom: 10px;
+  }
+
+  .name-and-contact-section {
+    text-align: center;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+ 
+  .contact-list li {
+    margin-bottom: 10px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .resume-container {
+    padding: 10px; 
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center; 
+    padding: 15px; 
+  }
+
+  .profile-section {
+    margin-bottom: 10px; 
+  }
+
+  .name-and-contact-section {
+    text-align: center; 
+    background-color: #222; 
+    padding: 10px; 
+    width: 100%; 
+  }
+
+  .name {
+    font-size: 24px; 
+  }
+
+  .main-content {
+    flex-direction: column; 
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; 
+    border-right: none; 
+    padding: 0; 
+  }
+
+  .contact-list {
+    flex-direction: column; 
+    gap: 5px; 
+  }
+
+  .icon {
+    width: 16px; 
+    height: 16px; 
+  }
+
+  .project h3 {
+    font-size: 18px; 
+  }
+
+  .project p {
+    font-size: 14px; 
+  }
+
+  .project ul li {
+    font-size: 14px; 
+  }
+
+  .skills h2,
+  .projects h2 {
+    font-size: 20px; 
+  }
+
+  .skills h3,
+  .projects h3 {
+    font-size: 16px; 
+  }
+}
+
